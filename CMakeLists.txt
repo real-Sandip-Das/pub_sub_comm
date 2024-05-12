@@ -33,11 +33,11 @@ include_directories(
 ## Declare cpp executables
 add_executable(publisher
   src/publisher_node.cpp
-  src/publisher.cpp
+  src/Publisher.cpp
 )
 add_executable(subscriber
   src/subscriber_node.cpp
-  src/subscriber.cpp
+  src/Subscriber.cpp
 )
 target_compile_features(publisher INTERFACE cxx_std_11)
 target_compile_features(subscribe INTERFACE cxx_std_11)
