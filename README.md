@@ -34,13 +34,13 @@ It can be used in two ways:
 Terminal command for running the publisher node:
 
 ```bash
-rosrun pub_sub_comm publisher _topic_name:='/pub_sub_comm' _publisher_rate_hz:=1 _dummy_string:='Some dummy string here'
+rosrun pub_sub_comm publisher _topic_name:='/pub_sub_comm' _publisher_rate_hz:=1 _dummy_string:='Some dummy string here' _queue_size:=5
 ```
 
 Terminal command for running the subscriber node:
 
 ```bash
-rosrun pub_sub_comm subscriber _topic_name:='/pub_sub_comm' _subscriber_queue_size:=5
+rosrun pub_sub_comm subscriber _topic_name:='/pub_sub_comm' _queue_size:=5
 ```
 
 ## 2. Using the launch file
