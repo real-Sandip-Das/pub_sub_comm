@@ -40,7 +40,7 @@ add_executable(subscriber
   src/Subscriber.cpp
 )
 target_compile_features(publisher INTERFACE cxx_std_11)
-target_compile_features(subscribe INTERFACE cxx_std_11)
+target_compile_features(subscriber INTERFACE cxx_std_11)
 
 ## Add dependencies to exported targets, like ROS msgs or srvs
 add_dependencies(publisher
@@ -74,6 +74,12 @@ install(
 install(
   DIRECTORY
     include/publisher/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+  FILES_MATCHING PATTERN "*.hpp"
+)
+
+install(
+  DIRECTORY
     include/subscriber/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
   FILES_MATCHING PATTERN "*.hpp"

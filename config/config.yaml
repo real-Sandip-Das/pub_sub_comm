@@ -1,0 +1,4 @@
+topic_name: '/pub_sub_comm' #Topic in which dummy messages will be published to, subscriber node will subscribe to the same topic
+dummy_string: 'Edit config/config.yaml in Package Folder to configure this dummy string'
+publisher_rate_hz: 1 #Number of dummy messages sent by publisher node each second
+queue_size: 5

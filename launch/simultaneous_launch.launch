@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+    <node name="publisher" pkg="pub_sub_comm" type="publisher" output="screen">
+        <rosparam command="load" file="$(find pub_sub_comm)/config/config.yaml" />
+    </node>
+    <!--
+    <node name="subscriber" pkg="pub_sub_comm" type="subscriber" output="screen">
+        <rosparam command="load" file="$(find pub_sub_comm)/config/config.yaml" />
+    </node>
+    -->
+</launch>
